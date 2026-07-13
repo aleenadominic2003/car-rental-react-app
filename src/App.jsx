@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Home from './components/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import AddCar from './components/AddCar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
       <Routes>
 
         <Route path='/' element={<Home/>} />
+        <Route path='/add-car' element={<AddCar/>} />
        
 
       </Routes>
